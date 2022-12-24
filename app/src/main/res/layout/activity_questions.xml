@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Question goes here"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            />
+        <ImageView
+            android:id="@+id/iv_question_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:contentDescription="Flag here will be modified in code"
+            android:src="@drawable/ic_flag_of_india"
+            />
+
+        <!-- Now for pregress bar, put it inside an horizontal LL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+
+            >
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                style="?android:attr/progressBarStyleHorizontal"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"
+                />
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+
+                android:text="0/10"
+                android:textSize="19sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            tools:text="Google"
+            />
+        <TextView
+            android:id="@+id/tv_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            tools:text="Google2"
+            />
+        <TextView
+            android:id="@+id/tv_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            tools:text="Google3"
+            />
+        <TextView
+            android:id="@+id/tv_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            tools:text="Google4"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:text="Submit"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+</ScrollView>
